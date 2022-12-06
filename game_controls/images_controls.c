@@ -6,7 +6,7 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 09:13:45 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/12/06 12:06:54 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/12/06 16:24:41 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ void	ft_put_image_to_window(t_catgame *window, void *image, int x, int y)
 }
 
 
-//Função que mostra na janela a quantidade de jogadas
+//Função que mostra na janela a quantidade de movimentos do player
+//Não diz respeito a sensação de movimento do sprite
 int	ft_img_movements(t_catgame *window)
 {
 		char *movements;
