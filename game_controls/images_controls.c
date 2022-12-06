@@ -6,14 +6,14 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/06 09:13:45 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/12/06 11:32:38 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/12/06 12:06:54 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "so_long.h"
 
 # define PIXEl_SIZE 32
-//conforme imagens captadas pela internet, o meu padrão foi 32, se o seu apdrão foi 16 x 16, o tamanho  32 não se aplica//
+//conforme imagens coletadas da internet, o meu padrão foi 32, se o seu apdrão foi 16 x 16, o tamanho  32 não se aplica//
 
 
 //Função para colocar imagem na tela//
@@ -54,13 +54,13 @@ void	ft_sprites(t_catgame *window, void **image, char *path)
 void	ft_put_sprites(t_catgame window)
 {
 		ft_sprites(window, &window->floor, "game_images/floor.xpm");
+		ft_sprites(window, &window->wall, "game_images/wall.xpm");
+		ft_sprites(window, &window->tree, "game_images/tree.xpm");
+		ft_sprites(window, &window->block, "game_images/block.xpm");
+		ft_sprites(window, &window->collectable, "game_images/collectable.xpm");
 		ft_sprites(window, &window->catplayer_right, "game_images/catplayer_right.xpm");
 		ft_sprites(window, &window->catplayer_down, "game_images/catplayer_down.xpm");
 		ft_sprites(window, &window->catplayer_left, "game_images/catplayer_left.xpm");
 		ft_sprites(window, &window->catplayer_up, "game_images/catplayer_up.xpm");
-		ft_sprites(window, &window->collectable, "game_images/collectable.xpm");
-		ft_sprites(window, &window->wall, "game_images/wall.xpm");
-		ft_sprites(window, &window->tree, "game_images/tree.xpm");
-		ft_sprites(window, &window->block, "game_images/block.xpm");
 }
 
