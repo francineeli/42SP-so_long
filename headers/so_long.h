@@ -6,7 +6,7 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 12:32:51 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/12/06 09:01:12 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/12/06 10:48:16 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,4 +21,15 @@
 # include "get_next_line"
 # include "../minilibx/mlx.h"
 
-typedef struct 
+typedef struct t_elements
+{
+		int		 fd;
+		int		widht_map;
+		int		 height_map;
+		void	*mlx_pointer;
+		void	*window;
+		void	*collectable;
+		to be continued
+}		t_catgame
+
+
