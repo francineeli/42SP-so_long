@@ -6,7 +6,7 @@
 /*   By: feli-bar <feli-bar@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/30 12:32:51 by feli-bar          #+#    #+#             */
-/*   Updated: 2022/12/06 12:07:59 by feli-bar         ###   ########.fr       */
+/*   Updated: 2022/12/07 14:20:08 by feli-bar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@
 # include "get_next_line"
 # include "../minilibx/mlx.h"
 
+# define PIXEL_SIZE 32
+
 typedef struct t_elements
 {
 		int		fd;
@@ -29,7 +31,9 @@ typedef struct t_elements
 		void	*conection;
 		void	*window;
 		void	*collectable;
+		void	*image;
+		void	*path;
 		to be continued
-}		t_catgame
+}		t_game
 
 
